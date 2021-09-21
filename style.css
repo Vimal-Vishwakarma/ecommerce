@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 8px 3px #c2c5c7;
+    padding: 2em;
+}
+h3.goback {
+    font-size: 15px;
+    text-align: center;
+}
+navbar {
+    display: flex;
+    position: fixed;
+    border-bottom:1px solid #c2c5c7 ;
+    box-shadow: 0 0 8px 3px #c2c5c7;
+    z-index: 2;
+    padding: 0 50px;
+    background: #fff;
+    width: 100%;
+}
+li.llist a {
+    color: #000;
+    text-decoration: none;
+}
+.card {
+    box-shadow: 0 0 8px 5px #d3d4d9;
+}.container-fluid{
+    padding:03em;
+}
+ul.navlist {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+li.llist {
+    padding: 32px 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.bannner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+ .controls button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  border-radius: 1.2em;
+  z-index: 1;
+}
+
+.controls .down-button {
+  transform: translateX(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+ .controls .up-button {
+  transform: translateY(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/*--------------------------------------------------------*/
+section#led-bulbs {
+    padding: 2em 0;
+}
+section#speakers {
+    padding: 2em 0;
+}
+section#mobiles {
+    padding: 2em 0;
+}
+img.logo {
+    width: 18%;
+}
+.bntbtn{
+    border: 1px solid #46b2ec;
+    color: #fff;
+    background: #46b2ec;
+    padding: 0.6em 1em;
+    font-size: 1em;
+    line-height: 1;
+    border-radius: 1.2em 0;
+    transition: color 0.2s ease-in-out;
+}
+.productcont {
+  display: flex; 
+}
+.product {
+    padding: 1em;
+    border: 2px solid #c2c5c7;
+    margin: 1em;
+    box-shadow: 0 0 8px 3px #c2c5c7;
+    border-radius: 20px 0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; 
+        z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    overflow-y: auto; 
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.cart-container {
+  border:1px solid #E0E4CC;
+  border-radius:5px;
+  margin-top:1em;
+  padding:1em;
+}
+button, input[type="submit"] { 
+    border:1px solid #46b2ec ; 
+    color:#fff; 
+    background: #46b2ec; 
+    padding:0.6em 1em;
+    font-size:1em; 
+    line-height:1; 
+    border-radius: 1.2em 0;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+    background: #A7DBD8;
+    border-color:#69D2E7;
+    color:#000;
+    cursor: pointer;
+}
+
+#carttotals {
+  margin-right:0;
+  margin-left:auto;
+}
+.cart-buttons {
+  width:auto;
+  margin-right:0;
+  margin-left:auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:1em 0;
+}
+#emptycart {
+  margin-right:1em;
+}
+table td:nth-last-child(1) {
+  text-align:right;
+}
+.message {
+  border-width: 1px 0px;
+  border-style:solid;
+  border-color:#A7DBD8;
+  color:#679996;
+  padding:0.5em 0;
+  margin:1em 0;
+}
+
+.mainhead {
+    margin:2em 0 0.5em;
+}
+h3.productname {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.padImg{
+    padding: 0 90px;
+}
+.footer {
+    background: linear-gradient(220.16deg, #213044 -8%, #0d1527 138%);
+    padding: 30px;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border: 1px solid;
+}
+table td:nth-last-child(1) {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .productcont {
+    display: block;
+}
+.padImg {
+  padding: 0 130px;
+}
+.mainhead {
+  margin: 0em 0 1.5em;
+  text-align: center;
+}
+navbar {
+  display: block;
+  position: fixed;
+  border-bottom: 1px solid #c2c5c7;
+  box-shadow: 0 0 8px 3px #c2c5c7;
+  z-index: 2;
+  padding: 0 10px;
+  background: #fff;
+  width: 100%;
+}
+img.logo {
+  width: 30%;
+  float: left;
+}
+li.llist {
+  padding: 12px 4px;
+  font-size: 15px;
+  font-weight: 700;
+  height: 54px;
+}
+.sidebar h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+.sidebar p {
+  font-size: 14px;  
+  text-align: center;
+}
+}
