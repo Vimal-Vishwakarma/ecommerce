@@ -333,4 +333,9 @@ li.llist {
   font-size: 14px;  
   text-align: center;
 }
+.form {
+  width: 100%;
+  padding: 2em
+  ;
+}
 }
